@@ -1,12 +1,58 @@
-# React + Vite
+# 📚 Mini Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Учебное CRUD-приложение на **React**, демонстрирующее работу с состоянием, модальными окнами и фильтрацией списка постов.  
+Проект — лёгкая версия блога, где можно создавать, удалять, сортировать и искать посты.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Функционал
 
-## Expanding the ESLint configuration
+- ➕ Создание постов через модальное окно  
+- ❌ Удаление постов  
+- 🔍 Поиск по названию  
+- ↕️ Сортировка постов (по `title` или `description`)  
+- 🎨 Адаптивный UI с кастомными компонентами (`Button`, `MyModal`)  
+- ⚡ Оптимизация производительности с помощью `useMemo`  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Стек технологий
+
+- [React](https://react.dev/) (хуки: `useState`, `useMemo`)  
+- TailwindCSS (оформление)  
+- Собственные UI-компоненты  
+
+---
+
+## 📂 Структура проекта
+
+```bash
+src/
+ ├── components/
+ │   ├── PostList.jsx
+ │   ├── PostForm.jsx
+ │   ├── PostFilter.jsx
+ │   └── ui/
+ │       ├── MyModal/
+ │       │   └── MyModal.jsx
+ │       └── button/
+ │           └── Button.jsx
+ ├── App.jsx
+ └── main.jsx
+
+⚙️ Установка и запуск
+# Клонируй репозиторий
+git clone https://github.com/your-username/mini-blog.git
+
+# Перейди в папку проекта
+cd mini-blog
+
+# Установи зависимости
+npm install
+
+# Запусти локальный сервер
+npm run dev
+
+
+После запуска проект будет доступен по адресу:
+👉 http://localhost:5173
